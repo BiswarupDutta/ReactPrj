@@ -53,6 +53,7 @@ const [selectedTopic, setSelectedTopic] = useState();
             description={CORE_CONCEPTS[3].description}
             image ={CORE_CONCEPTS[3].image}
             /> */}
+            
           </ul>
         </section>
         <section id="examples">
