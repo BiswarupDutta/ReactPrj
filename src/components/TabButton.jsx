@@ -1,4 +1,4 @@
-export default function TabButton({ children, onSelect }) {
+export default function TabButton({ children, onSelect, isSeleted }) {
   function handleClick() {
     //console.log('hello World');
     onSelect(); // Call the passed function
@@ -6,7 +6,7 @@ export default function TabButton({ children, onSelect }) {
 
   return (
     <li>
-      <button onClick={handleClick}>{children}</button>
+      <button className={isSeleted? 'active' : undefined} onClick={handleClick}>{children}</button>
     </li>
   );
 }
